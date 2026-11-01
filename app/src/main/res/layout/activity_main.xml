@@ -1,0 +1,213 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- APP TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Drift AI"
+            android:textColor="#17365D"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your personal sleep and lifestyle monitor"
+            android:textColor="#607080"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <!-- BEDTIME SETTINGS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bedtime Settings"
+                android:textColor="#17365D"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/sleepTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usual sleep time: 11:00 PM"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="14dp" />
+
+            <Button
+                android:id="@+id/setSleepButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Bedtime"
+                android:backgroundTint="#245A91"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- WAKE-UP ALARM -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wake-up Alarm"
+                android:textColor="#17365D"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/wakeTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usual wake-up time: 07:00 AM"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_marginBottom="14dp" />
+
+            <Button
+                android:id="@+id/setWakeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Wake-up Alarm"
+                android:backgroundTint="#18845D"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- SLEEP MONITORING -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleep Monitoring"
+                android:textColor="#17365D"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/monitoringStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleep monitoring is not active"
+                android:textColor="#607080"
+                android:textSize="15sp"
+                android:layout_marginBottom="14dp" />
+
+            <Button
+                android:id="@+id/startTrackingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Sleep Tracking"
+                android:backgroundTint="#17365D"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- SLEEP SUMMARY -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleep Summary"
+                android:textColor="#17365D"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/lastSleepText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last sleep duration: Not available"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/averageSleepText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average sleep duration: Not available"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleep History"
+                android:textColor="#17365D"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/sleepHistoryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your sleep history will appear here."
+                android:textColor="#607080"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
